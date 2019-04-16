@@ -1,0 +1,20 @@
+UPDATE LOG:
+--------------------------------------------------------------------------------------------------
+Working Project: Teensy Tetris
+
+Update: anima vesta 0.1
+  -added a collision function, it is very buggy, but it works to some extent.
+    -bug: sucessfully collides at the bottom of the screen, but keeps copying 'set' pixels
+Update: anima vesta 0.2
+  -patched collision function, much less buggy and it looks like it works properly now
+  -added a test function to test for conditions in the code, a way to debug it on runtime
+Update: anima vesta 0.3
+  -added user input by adding a joystick
+  -added the concept of a "pivot point" in order to rotate tetrinominos
+    bug:  integrating joy stick and tetris, 
+          joystick commands override "set" status? will have to check when I'm free
+          -collision may not be setting everything on the screen
+Update: anima vesta 0.4
+  -fixed joystick bugs and optimized some of the code
+  -bug: when moving diagonally into a lit pixel, game freaks out
+  -bug: when holding left, the second item spawned sometimes gets repeated vertically
